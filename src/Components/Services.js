@@ -11,8 +11,8 @@ const Services = () => {
         {Service.map((item) => {
           const { id, icon, text, title } = item;
           return (
-            <article className="service">
-              <span className="service-icon">
+            <article className="service" key={id}>
+              <span className="service-icon" key={id}>
                 <i className={icon}></i>
               </span>
               <div className="service-info">
